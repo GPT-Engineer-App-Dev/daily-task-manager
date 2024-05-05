@@ -44,7 +44,7 @@ const Index = () => {
             onChange={(e) => setInput(e.target.value)}
             onKeyPress={(e) => e.key === 'Enter' && addTask()}
           />
-          <Button onClick={addTask} ml={2}>Add</Button>
+          <Button onClick={addTask} ml={2} colorScheme="green">Add</Button>
         </Flex>
         <List width="100%">
           {tasks.map(task => (
